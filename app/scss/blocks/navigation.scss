@@ -1,0 +1,26 @@
+.navigation{
+  margin: auto 0;
+  &__list{
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+  &__link{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+}

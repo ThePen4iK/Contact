@@ -1,0 +1,84 @@
+.header{
+  background: linear-gradient(180deg, #A268F9 0%, #B88BFB 100%);
+  padding-top: 17px;
+  padding-bottom: 18px;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__logo{
+    display: flex;
+    text-decoration: none;
+  }
+  &__wrap{
+    margin-left: 25px;
+  }
+  &__time{
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  &__name{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+  }
+  &__about{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__sity{
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  &__btn{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 8.5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+    width: 88px;
+    height: 35px;
+    &-icon{
+      margin-right: 6px;
+    }
+
+  }
+}

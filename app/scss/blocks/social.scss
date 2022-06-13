@@ -1,0 +1,27 @@
+.social {
+  &__title{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+  }
+  &__link{
+    text-decoration: none ;
+  }
+}
