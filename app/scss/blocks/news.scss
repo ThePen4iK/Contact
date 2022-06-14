@@ -1,23 +1,27 @@
 .news {
-  padding: 50px 45px;
-
+  padding: 50px 0 45px;
+  @media(max-width: 768px){
+    padding: 40px 0 60px;
+  }
   &__list {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     gap: 30px;
     margin-bottom: 60px;
+    flex-wrap: wrap;
+    @media(max-width: 768px){
+      justify-content: center;
+    }
   }
 
   &__item {
     width: 100%;
     max-width: 350px;
 
-
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(215, 215, 215, 0.8);
     border-radius: 16px;
-
 
   }
 
@@ -67,6 +71,9 @@
 
   &__wrapper {
     padding: 20px 25px;
+    @media(max-width: 768px){
+    padding: 15.4px 19.3px 23.7px;
+    }
   }
 
   &__indent {
@@ -78,6 +85,7 @@
     text-align: left;
     color: #484848;
     margin: 0 0 15px;
+
   }
 
   &__text {

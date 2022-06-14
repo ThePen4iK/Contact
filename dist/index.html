@@ -16,7 +16,7 @@
     <header class="header">
     <div class="container header__container">
         <a href="index.html" class="header__logo">
-            <svg class="header__icon" width="68" height="85">
+            <svg class="header__icon">
                 <use xlink:href="img/sprite.svg#header-logo"></use>
             </svg>
 
@@ -26,34 +26,46 @@
                 <p class="header__sity">м.КРИВИЙ РІГ</p>
             </div>
         </a>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">РЕМОНТНІ РОБОТИ </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> СТАТИСТИКА </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> НОВИНИ </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> ОПИТУВАННЯ </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> ПРО ПОРТАЛ </a>
-                </li>
-            </ul>
 
-            <h1 class="header__name">ПРОЄКТ ЮРІЯ ВІЛКУЛА</h1>
-        </nav>
-        <button class="header__btn">
-            <svg class="header__btn-icon" width="18" height="19" fill="none">
-                <use xlink:href="img/sprite.svg#header-btn"></use>
-            </svg>
-            Увійти
+        <div class="header__wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">РЕМОНТНІ РОБОТИ </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link"> СТАТИСТИКА </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link"> НОВИНИ </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link"> ОПИТУВАННЯ </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link"> ПРО ПОРТАЛ </a>
+                    </li>
+                </ul>
+
+                <h1 class="header__name">ПРОЄКТ ЮРІЯ ВІЛКУЛА</h1>
+            </nav>
+            <button class="header__btn">
+                <svg class="header__btn-icon" width="18" height="19" fill="none">
+                    <use xlink:href="img/sprite.svg#header-btn"></use>
+                </svg>
+                Увійти
+            </button>
+        </div>
+        <button class="burger">
+            <span class="burger__line"></span>
         </button>
+
+
+
+
     </div>
+    <h1 class="header__name header__name--mod">ПРОЄКТ ЮРІЯ ВІЛКУЛА</h1>
+
 </header>
 
   <main class="main">
@@ -261,22 +273,21 @@
 
                 </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+
+
+                <div class="about__prev">
+                    <svg class="about__left" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#left"></use>
+                    </svg>
+                </div>
+                <div class="about__next">
+                    <svg class="about__right" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#right"></use>
+                    </svg>
+                </div>
             </div>
 
-            <!--            <div class="about__navigation">-->
-            <!--                <div class="about__prev">-->
-            <!--                    <svg class="about__left" width="24" height="24">-->
-            <!--                        <use xlink:href="img/sprite.svg#left"></use>-->
-            <!--                    </svg>-->
-            <!--                </div>-->
-            <!--                <div class="about__next">-->
-            <!--                    <svg class="about__right" width="24" height="24">-->
-            <!--                        <use xlink:href="img/sprite.svg#right"></use>-->
-            <!--                    </svg>-->
-            <!--                </div>-->
-            <!--            </div>-->
+
         </div>
     </div>
 </section>
@@ -284,59 +295,66 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-        <a href="index.html" class="header__logo">
-            <svg class="header__icon" width="68" height="85">
-                <use xlink:href="img/sprite.svg#header-logo"></use>
-            </svg>
-
-            <div class="header__wrap">
-                <p class="header__time">15-20 </p>
-                <h1 class="header__about">КОНТАКТ ЦЕНТР </h1>
-                <p class="header__sity">м.КРИВИЙ РІГ</p>
-            </div>
-        </a>
         <div class="footer__bg">
-            <img  src="img/footer-bg.svg" alt="bg">
+            <picture class="picture">
+                <source srcset="img/footer-bg-mobile.svg" media="(max-width: 768px)">
+                <img src="img/footer-bg.svg" alt="bg">
+
+            </picture>
         </div>
-        <div class="footer__wrapper">
-            <nav class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Головна
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link"> ПРО ПОРТАЛ
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class="footer__link"> Політика конфіденційності
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="footer__content">
+            <a href="index.html" class="header__logo">
+                <svg class="header__icon" width="68" height="85">
+                    <use xlink:href="img/sprite.svg#header-logo"></use>
+                </svg>
 
-            <div class="footer__social">
-                <h3 class="social__title">Соціальні мережі</h3>
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a href="#" class="social__link">
+                <div class="header__wrap">
+                    <p class="header__time">15-20 </p>
+                    <h1 class="header__about">КОНТАКТ ЦЕНТР </h1>
+                    <p class="header__sity">м.КРИВИЙ РІГ</p>
+                </div>
+            </a>
+            <div class="footer__wrapper">
+                <nav class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Головна
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"> ПРО ПОРТАЛ
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"> Політика конфіденційності
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-                            <svg class="social__icon" width="32" height="32" fill="none">
-                                <use xlink:href="img/sprite.svg#social1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg class="social__icon" width="32" height="32" fill="none">
-                                <use xlink:href="img/sprite.svg#social2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="footer__social">
+                    <h3 class="social__title">Соціальні мережі</h3>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+
+                                <svg class="social__icon" width="32" height="32" fill="none">
+                                    <use xlink:href="img/sprite.svg#social1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__icon" width="32" height="32" fill="none">
+                                    <use xlink:href="img/sprite.svg#social2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <p class="footer__copyright">Контакт центр м. Кривий Ріг Ⓒ 2022</p>
     </div>
 </footer>
 
