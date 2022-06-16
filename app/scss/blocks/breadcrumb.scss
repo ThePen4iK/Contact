@@ -1,0 +1,36 @@
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  @media(max-width: 768px){
+    justify-content: center;
+  }
+  &__item + &__item:before {
+  padding: 0 0 0 5px;
+    color: rgba(72, 72, 72, 0.8);
+    content: "/\00a0";
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #484848;
+    &--active{
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #484848;
+    }
+  }
+
+}

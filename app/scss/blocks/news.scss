@@ -1,8 +1,9 @@
 .news {
   padding: 50px 0 45px;
-  @media(max-width: 768px){
+  @media(max-width: 768px) {
     padding: 40px 0 60px;
   }
+
   &__list {
     list-style: none;
     display: flex;
@@ -10,7 +11,7 @@
     gap: 30px;
     margin-bottom: 60px;
     flex-wrap: wrap;
-    @media(max-width: 768px){
+    @media(max-width: 768px) {
       justify-content: center;
     }
   }
@@ -71,11 +72,17 @@
 
   &__wrapper {
     padding: 20px 25px;
-    @media(max-width: 768px){
-    padding: 15.4px 19.3px 23.7px;
+    @media(max-width: 768px) {
+      padding: 15.4px 19.3px 23.7px;
     }
   }
+  &__wrap{
+    display: flex;
+    align-items: center;
+    &--about{
 
+    }
+  }
   &__indent {
     font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
@@ -102,20 +109,37 @@
   &__about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    &--about{
+      width: 100%;
+      max-width: 190px;
+    }
   }
 
   &__icon {
 
   }
-  &__date{
+
+  &__date {
+    display: block;
     font-family: "Nunito Sans", sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: justified;
-
+    &--about{
+      font-size: 14px;
+      line-height: 19px;
+      color: #999999;
+      @media(max-width: 768px){
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
   }
+
   &__number {
     font-family: "Nunito Sans", sans-serif;
     font-size: 12px;
@@ -124,9 +148,11 @@
     letter-spacing: 0em;
     text-align: justified;
     color: #777777;
+    display: block;
+    margin-left: 5px;
   }
 
-  &__btn{
+  &__btn {
     padding: 10px 18px;
     background: linear-gradient(270deg, #F1BD08 0%, #EAC544 100%);
     border-radius: 8px;
@@ -148,5 +174,86 @@
     margin: 0 auto;
 
     cursor: pointer;
+    text-decoration: none;
+
+    &--mod {
+      max-width: max-content;
+    }
+  }
+  &__numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+  }
+  &__prev {
+    padding: 9.65px 14px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+  }
+
+  &__next {
+    padding: 9.65px 14px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    color: rgba(164, 107, 249, 0.3);
+
+    &--active {
+      color: #A46BF9;
+    }
+  }
+
+  &__pages {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  &__page {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    padding: 12px 14px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #A46BF9;
+    }
+    &--active {
+      background: #A46BF9;
+      border: 1px solid #A46BF9;
+      border-collapse: collapse;
+
+      & span {
+        color: #ffffff;
+      }
+    }
+
+
   }
 }

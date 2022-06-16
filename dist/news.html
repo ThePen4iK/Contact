@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,8 +13,8 @@
     <title>Document</title>
 </head>
 
-  <body>
-    <header class="header">
+<body>
+<header class="header">
     <div class="container header__container">
         <a href="index.html" class="header__logo">
             <svg class="header__icon">
@@ -69,44 +69,19 @@
 
 </header>
 
-  <main class="main">
-    <section class="start ">
+<main class="main">
+    <section class="preview">
     <div class="container">
-        <h1 class="start__title title">Як це працює?</h1>
+        <h1 class="preview__title title">Новини</h1>
 
-        <ul class="start__list">
-            <li class="start__item">
-                <picture class="picture">
-                    <img class="start__img" src="img/start-1.svg" alt="start">
-                </picture>
-                <h2 class="start__indent">Помітив проблему?</h2>
-                <p class="start__text">Не лишайся осторонь! <br>
-                    Перший крок до вирішення проблеми — визнати її</p>
-            </li>
-            <li class="start__item">
-                <picture class="picture">
-                    <img class="start__img" src="img/start-2.svg" alt="start">
-                </picture>
-                <h2 class="start__indent">Залиш звернення</h2>
-                <p class="start__text">Можна подзвонити, написати, або ж просто сфотографувати і завантажити зображення проблеми у додаток.</p>
-            </li>
-            <li class="start__item">
-                <picture class="picture">
-                    <img class="start__img" src="img/start-3.svg" alt="start">
-                </picture>
-                <h2 class="start__indent">Слідкуй за виконанням</h2>
-                <p class="start__text">І наостанок — найприємніша частина, спостерігати за тим, як завдяки саме тобі наше місто змінюється на краще.</p>
-            </li>
+
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Головна </a></li>
+            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link breadcrumb__link--active">Новини</a></li>
         </ul>
-
-        <button class="start__btn">
-            <svg class="start__icon" width="24" height="24" fill="none">
-                <use xlink:href="img/sprite.svg#add"></use>
-            </svg>
-            Залишити звернення
-        </button>
     </div>
 </section>
+
 
     <section class="news">
     <div class="container">
@@ -202,99 +177,125 @@
                     </div>
                 </div>
             </li>
+
+            <li class="news__item">
+                <div class="news__img">
+
+                    <img src="img/news-1.jpg" alt="news">
+
+                    <div class="news__decor">
+                        <svg class="news__decor-icon" width="36" height="45" fill="none">
+                            <use xlink:href="img/sprite.svg#decor"></use>
+                        </svg>
+                        <p class="news__decor-text">15-20 </p>
+                    </div>
+                </div>
+                <div class="news__wrapper">
+                    <h2 class="news__indent">Особливості використання багатофункціональних електронних “Карток
+                        Криворіжця”...</h2>
+
+                    <p class="news__text">На період дії воєнного стану в Україні та для забезпечення життєво необхідних
+                        потреб жителів територіальної міста Кривого Рогу...</p>
+
+                    <div class="news__about">
+                        <span class="news__date">10 червня 2022</span>
+
+                        <div class="news__wrap">
+                            <svg class="news__icon" width="16" height="16" fill="none">
+                                <use xlink:href="img/sprite.svg#see"></use>
+                            </svg>
+                            <span class="news__number">322</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="news__item">
+                <div class="news__img">
+
+                    <img src="img/news-2.jpg" alt="news">
+
+                    <div class="news__decor">
+                        <svg class="news__decor-icon" width="36" height="45" fill="none">
+                            <use xlink:href="img/sprite.svg#decor"></use>
+                        </svg>
+                        <p class="news__decor-text">15-20 </p>
+                    </div>
+                </div>
+                <div class="news__wrapper">
+                    <h2 class="news__indent">Загальнонаціональна хвилина мовчання за загиблими в наслідок збройної агресії Російської Федера...</h2>
+
+                    <p class="news__text">Загальнонаціональна хвилина мовчання за загиблими в наслідок збройної агресії Російської Федера...</p>
+
+                    <div class="news__about">
+                        <span class="news__date">10 червня 2022</span>
+
+                        <div class="news__wrap">
+                            <svg class="news__icon" width="16" height="16" fill="none">
+                                <use xlink:href="img/sprite.svg#see"></use>
+                            </svg>
+                            <span class="news__number">150</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="news__item">
+                <div class="news__img">
+
+                    <img src="img/news-3.jpg" alt="news">
+
+                    <div class="news__decor">
+                        <svg class="news__decor-icon" width="36" height="45" fill="none">
+                            <use xlink:href="img/sprite.svg#decor"></use>
+                        </svg>
+                        <p class="news__decor-text">15-20 </p>
+                    </div>
+                </div>
+                <div class="news__wrapper">
+                    <h2 class="news__indent">До уваги землевласників та землекористувачів: реєстрацію прав на землю відновлено</h2>
+
+                    <p class="news__text">За інформацією Державної служби України з питань геодезії, картографії та кадастру відповідно до наказу Держгеокадастру...</p>
+
+                    <div class="news__about">
+                        <span class="news__date">10 червня 2022</span>
+
+                        <div class="news__wrap">
+                            <svg class="news__icon" width="16" height="16" fill="none">
+                                <use xlink:href="img/sprite.svg#see"></use>
+                            </svg>
+                            <span class="news__number">322</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
 
-        <button class="news__btn">Дивитися всі новини</button>
-    </div>
-</section>
-
-    <section class="about">
-    <div class="container">
-        <h1 class="about__title title">Про що можна повідомити?</h1>
-
-        <div class="about__wrapper">
-            <div class="swiper about__swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-1.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Житло</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-2.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Зв’язок</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-3.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Робота в умовах карантину</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-4.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Екологія</h2>
-                    </div>
-
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-1.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Житло</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-2.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Зв’язок</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-3.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Робота в умовах карантину</h2>
-                    </div>
-
-                    <div class="swiper-slide about__slide">
-                        <picture class="picture">
-                            <img src="img/about-4.svg" alt="about" class="about__img">
-                        </picture>
-                        <h2 class="about__indent">Екологія</h2>
-                    </div>
-
-                </div>
-
-
-
-                <div class="about__prev">
-                    <svg class="about__left" width="24" height="24">
-                        <use xlink:href="img/sprite.svg#left"></use>
-                    </svg>
-                </div>
-                <div class="about__next">
-                    <svg class="about__right" width="24" height="24">
-                        <use xlink:href="img/sprite.svg#right"></use>
-                    </svg>
-                </div>
-            </div>
-
-
+        <div class="news__numbers">
+            <button class="news__prev">
+                <svg class="news__icon" width="13" height="12" >
+                    <use xlink:href="img/sprite.svg#prev"></use>
+                </svg>
+            </button>
+            <ul class="news__pages">
+                <li class="news__page news__page--active"><span>1</span></li>
+                <li class="news__page"><span>2</span></li>
+                <li class="news__page"><span>3</span></li>
+            </ul>
+            <button class="news__next">
+                <svg class="news__icon news__icon--active" width="13" height="12">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                </svg>
+            </button>
         </div>
+
+
+
+        <a href="index.html" class="news__btn news__btn--mod">На головну</a>
     </div>
 </section>
 
-  </main>
-  <footer class="footer">
+
+</main>
+<footer class="footer">
     <div class="container footer__container">
         <div class="footer__bg">
             <picture class="picture">
@@ -359,6 +360,6 @@
     </div>
 </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+<script src="js/script.js"></script>
+</body>
 </html>
