@@ -4,11 +4,12 @@
   flex-wrap: wrap;
 
   align-items: center;
-  @media(max-width: 768px){
+  @media(max-width: 768px) {
     justify-content: center;
   }
+
   &__item + &__item:before {
-  padding: 0 0 0 5px;
+    padding: 0 0 0 5px;
     color: rgba(72, 72, 72, 0.8);
     content: "/\00a0";
   }
@@ -21,8 +22,9 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    color: #484848;
-    &--active{
+    color: rgba(72, 72, 72, 0.8);
+
+    &--active {
       font-family: "Nunito Sans", sans-serif;
       font-size: 14px;
       font-weight: 700;

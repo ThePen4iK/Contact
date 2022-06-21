@@ -147,6 +147,8 @@
       opacity: 1;
       transform: translateY(0);
       overflow: auto;
+      z-index: 10;
+
     }
   }
 }

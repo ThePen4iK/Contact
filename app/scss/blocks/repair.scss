@@ -1,0 +1,85 @@
+.repair {
+  background: #F6F7F9;
+  padding: 60px 0;
+
+  &__list {
+    list-style: none;
+    margin-bottom: 120px;
+
+    display: grid;
+    gap: 30px;
+    @media(max-width: 1000px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width: 850px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 600px){
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  &__item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(215, 215, 215, 0.8);
+    border-radius: 12px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media(max-width: 1000px){
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+
+  &__wrapper {
+    padding: 0 15px;
+    &:not(:last-child){
+      border-right: 1px solid #DDDDDD;
+      @media(max-width: 1000px){
+        border-right: none;
+        border-bottom: 1px solid #DDDDDD;
+      }
+    }
+
+    &--mod{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .repair__title{
+        width: 100%;
+        max-width: 82px;
+      }
+    }
+
+    @media(max-width: 1000px){
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A6A6A6;
+  }
+  &__text{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C5C5C;
+    &--bold{
+      font-weight: 700;
+
+    }
+  }
+}
