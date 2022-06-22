@@ -1639,6 +1639,7 @@ img {
   padding: 40px 30px;
   background: #ffffff;
   border-radius: 16px;
+  margin-bottom: 40px;
 }
 @media (max-width: 768px) {
   .portal__wrapper {
@@ -1776,6 +1777,93 @@ img {
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 22px;
+  }
+}
+
+.interview {
+  padding: 60px 0;
+}
+.interview__list {
+  list-style: none;
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .interview__list {
+    margin-bottom: 40px;
+  }
+}
+.interview__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(215, 215, 215, 0.8);
+          box-shadow: 0px 4px 20px rgba(215, 215, 215, 0.8);
+  border-radius: 12px;
+}
+.interview__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .interview__item {
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.interview__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5C5C5C;
+}
+.interview__date {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A6A6A6;
+}
+.interview__btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: -webkit-gradient(linear, right top, left top, from(#F1BD08), to(#EAC544));
+  background: -o-linear-gradient(right, #F1BD08 0%, #EAC544 100%);
+  background: linear-gradient(270deg, #F1BD08 0%, #EAC544 100%);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  .interview__btn {
+    margin-top: 30px;
   }
 }
 
