@@ -6,14 +6,22 @@
 
   &__swiper {
     overflow: hidden;
+
   }
 
   &__slide {
-    flex: 0 0 255px;
+    flex: 0 0 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media(min-width: 576px){
+      flex: 0 0 200px;
+    }
+    @media(min-width: 768px){
+      flex: 0 0 250px;
+    }
   }
 
   &__img {
