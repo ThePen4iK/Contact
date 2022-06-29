@@ -10,17 +10,20 @@
   }
 
   &__slide {
-    flex: 0 0 180px;
+    flex: 0 0 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    @media(min-width: 576px){
-      flex: 0 0 200px;
-    }
+    //@media(min-width: 576px){
+    //  flex: 0 0 200px;
+    //}
     @media(min-width: 768px){
-      flex: 0 0 250px;
+      flex: 0 0 255px;
+    }
+    @media(min-width: 1200px){
+      flex: unset;
     }
   }
 
